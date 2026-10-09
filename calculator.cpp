@@ -1,5 +1,10 @@
 #include<iostream>
 using namespace std;
 int main(){
-    cout<<"enter number: ";
+    int a,b;
+    cout<<"enter number1: ";
+    cin>>a;
+    cout<<"enter number 2: "<<endl;
+    cin>>b;
+
 }
