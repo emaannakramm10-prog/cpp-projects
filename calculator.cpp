@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-    float num1,num2; //declaration of all future variables
+    int num1,num2; //declaration of all future variables
     char opt;
     cout<<"enter number1: "<<endl;
     cin>>num1;
@@ -10,13 +10,13 @@ int main(){
     cout<<"Enter opperation you would like to perform(*,+,-,/,%): ";
     cin>>opt;
 if(opt == '*')
-    cout<<"\nMultiplication of "<<num1<<" into "<<num2<<" will be "<<(num1*num2);
+    cout<<"\nMultiplication of "<<num1<<" into "<<num2<<" will be "<< (num1*num2);
 else if(opt == '+')
     cout<<"\nAddition of "<<num1<<" and "<<num2<<" will be "<<(num1+num2);
 else if(opt == '/')
     { 
     if(num2 !=0)
-        cout<<"\nDivision of "<<num1<<" and "<<num2<<" will be "<<(num1/num2);  
+        cout<<"\nDivision of "<<num1<<" and "<<num2<<" will be "<<(float(num1)/ float(num2));  
     else
         cout<<"\nCannot divide by zero";
     }    
@@ -25,7 +25,7 @@ else if(opt == '-')
 else if(opt == '%')
     {
     if(num2 !=0)
-        cout<<"\nModulus of "<<num1<<" with "<<num2<<" will be "<<(int(num1)%int(num2));
+        cout<<"\nModulus of "<<num1<<" with "<<num2<<" will be "<<(num1 % num2);
     else
         cout<<"\nCannot divide by zero";
     }
